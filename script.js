@@ -18,7 +18,7 @@ document.querySelector('.check').addEventListener
         else if (guess < secretNumber) {
             document.querySelector('.message').textContent = 'Go high '
         }
-        else if ( guess === secretNumrber)   {
+        else if ( guess === secretNumber)   {
             document.querySelector ('.message').textContent = '🍕 Correct Number!'
         }
     });
