@@ -12,10 +12,13 @@ document.querySelector('.check').addEventListener
         if (!guess) {
             document.querySelector('.message').textContent = '⛔ No Number!'
         } 
+        else if (guess > secretNumber ) {
+            document.querySelector ('.message').textContent = ('Go lower')
+        }
         else if (guess < secretNumber) {
-          document.querySelector('.message').textContent = 'Go high '
+          document.querySelectror('.message').textContent = 'Go high '
         }
         else if ( guess === secretNumrber)   {
-            document.querySlector('.message').textContent = '🍕 Correct Number!'
+            document.querySelector ('.message').textContent = '🍕 Correct Number!'
         }
     });
