@@ -1,7 +1,7 @@
 'use strict';
 
 const secretNumber =Math.trunc(Math.random() * 20) + 1;
-document.querySelector('.number').textContent=secretNumber;
+/*document.querySelector('.number').textContent=secretNumber;*/
 
 
 document.querySelector('.check').addEventListener
@@ -20,5 +20,6 @@ document.querySelector('.check').addEventListener
         }
         else if ( guess === secretNumber)   {
             document.querySelector ('.message').textContent = '🍕 Correct Number!'
-        }
+            document.querySelector('.number').textContent = secretNumber;
+        } 
     });
